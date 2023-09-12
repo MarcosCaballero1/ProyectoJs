@@ -42,7 +42,6 @@ function credito() {
     function resume(cantPorMes, nombre, montoSolicitado, cuotas){
         alert('Felicidades ' + nombre + ' su crédito de ' + montoSolicitado + ' ha sido aprobado con éxito. \n Se deberá abonar ' + cantPorMes + ' por ' + cuotas + ' meses');
     }
-
     function validarNumOString(value, numOrNot){
         if(numOrNot == 'num'){
             while (isNaN(value)) {
