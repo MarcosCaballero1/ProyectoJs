@@ -33,14 +33,31 @@ function credito() {
             resume(cantPorMes, nombre, montoSolicitado, cuotas, edad)
         });
         
-    }
+}
+        //Array
+    // let tipoPago = ['efectivo', 'transferencia', 'cheque'];
+    // let tipoPagoRespuesta = prompt ('Cómo desea recibir su crédito? (Efectivo, Transferencia, Cheque)')
+    // for (let i = 0; i < tipoPago.length; i++) {
+    //     if(tipoPagoRespuesta.toLocaleLowerCase() == tipoPago[i]){
+            
+    //     }
+    // }        
+    // }
+        //Objeto
+    // let usuario = {
+    //     nombre = validarNumOString(prompt('nombre')),
+    //     edad = validarNumOString(prompt('edad'), 'num'),
+    //     ciudadania = validarNumOString(prompt('ciudadania')),
+    //     montoSolicitado = validarNumOString(prompt('Ingresa monto a solicitar'), 'num'),
+    //     ingresosMensuales = validarNumOString(prompt('Ingresos mensuales'), 'num'),
+    // }
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     function resume(cantPorMes, nombre, montoSolicitado, cuotas){
-        alert('Felicidades ' + nombre + ' su crédito de ' + montoSolicitado + ' ha sido aprobado con éxito. \n Se deberá abonar ' + cantPorMes + ' por ' + cuotas + ' meses');
+        alert('Felicidades ' + nombre + ' su crédito de ' + montoSolicitado + ' en ' + tipoPagoRespuesta + ' ha sido aprobado con éxito. \n Se deberá abonar ' + cantPorMes + ' por ' + cuotas + ' meses');
     }
     function validarNumOString(value, numOrNot){
         if(numOrNot == 'num'){
@@ -61,3 +78,4 @@ function credito() {
         }
         return siONo;
     }
+    //Buenas noches Coder! sepan disculpar esta entrega, pienso cambiar y empezar de 0 mi proyecto con una idea mejor.
